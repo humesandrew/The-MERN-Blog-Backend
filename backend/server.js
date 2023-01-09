@@ -1,5 +1,6 @@
 const express = require("express");
 const app = express();
+const cors = require("cors");
 
 // use mongoose, an ODM library (object-database-modelling) which allows us to use methods (post, patch, etc) //
 // to read and write database documents. It also allows to use schemas and models for more accuracy //
@@ -19,6 +20,9 @@ app.use((req, res, next) => {
 });
 // add middleware (express.json) which allows us to access req.body for request data //
 app.use(express.json());
+app.use(cors({
+  origin: ["http://localhost:4000", "https://the-mern-blog-frontend.onrender.com"]
+}));
 
 //prepend api/blogs to all requests to blogRoutes//
 app.use("/api/blogs", blogRoutes);
