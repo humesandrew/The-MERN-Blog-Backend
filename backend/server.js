@@ -21,7 +21,7 @@ app.use((req, res, next) => {
 // add middleware (express.json) which allows us to access req.body for request data //
 app.use(express.json());
 app.use(cors({
-  origin: ["http://localhost:4000", "https://the-mern-blog-frontend.onrender.com"]
+  origin: ["http://localhost:10000", "https://the-mern-blog-frontend.onrender.com"]
 }));
 
 //prepend api/blogs to all requests to blogRoutes//
