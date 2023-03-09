@@ -14,6 +14,11 @@ const userSchema = new Schema({
     type: String,
     required: true,
   },
+  _id: {
+    type: String,
+    required: true,
+
+  }
 });
 
 // create a static method we can call later //
