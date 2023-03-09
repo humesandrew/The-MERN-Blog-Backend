@@ -39,7 +39,9 @@ const getBlog = async (req, res) => {
 
 //Controller for POST //
 //add document to db via this controller//
-// this is a better organized practice
+// this is a better organized practice// 
+
+// trying cgpt code //
 const createBlog = async (req, res) => {
   const { title, body, author } = req.body;
 
@@ -69,6 +71,8 @@ const createBlog = async (req, res) => {
   }
 };
 
+
+// end cgpt section//
 //Controller for PATCH single //
 const updateBlog = async (req, res) => {
   const { id } = req.params;
