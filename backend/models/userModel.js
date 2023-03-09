@@ -14,7 +14,7 @@ const userSchema = new Schema({
     type: String,
     required: true,
   },
-  _id: {
+  user_id: {
     type: String,
     required: true,
 
